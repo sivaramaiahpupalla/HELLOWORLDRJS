@@ -7,8 +7,14 @@ const Variables = () => {
 
   let handlechange = (event) =>
   {
+    setValue(event.target.value)
+  }
+
+  let handlesubmit = (event)=>{
     console.log(event);
+    event.preventDefault();
     
+
   }
   return (
     <>
@@ -22,7 +28,7 @@ const Variables = () => {
         <input type="text"  onChange ={handlechange}/>
     </div>
     <div>
-        <button>print</button>
+        <button onClick ={handlesubmit}>print</button>
     </div>
     </>
   )
