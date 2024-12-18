@@ -5,18 +5,26 @@ const Variables = () => {
   let [value,setValue] = useState({})
 
 
+
+  let [submittedvalues,setSubmittedvalues] = useState({})
+
+
   let handlechange = (event) =>
   {
-    setValue(event.target.value)
+
+    const { name, value } = event.target;
+    setValue({ ...value, [name]: value });
+    //setValue(event.target.value)
   }
 
   let handlesubmit = (event)=>{
     console.log(event);
-    event.preventDefault();
-    
-
+    setSubmittedvalues(value)
   }
-  return (
+    
+    <h3> {value} </h3>
+  
+   return (
     <>
     <h1> Welcome to the react js</h1>
     <div>
@@ -30,6 +38,8 @@ const Variables = () => {
     <div>
         <button onClick ={handlesubmit}>print</button>
     </div>
+
+
     </>
   )
 }
