@@ -2,23 +2,23 @@ import React,{useState} from 'react'
 
 const Variables = () => {
 
-  let [input,setInput] = useState({
-     a:"",
-     b:"",
-  })
+const [inputOne,setInputOne] = useState();
+const[inputTwo, setInputTwo] = useState();
 
-   let [submitval,setSubmitval] = useState(false)
+   const [submitval,setSubmitval] = useState(false)
 
-  let handlechange =(event)=>{
-        
-        setInput(event.target.value)
-        
-         
-    }
+  const handleChangeOne =(event)=>{
+    setInputOne(event.target.value) 
+   
+      }
+      const handleChangeTwo =(event)=>
+      {
+        setInputTwo(event.target.value)
+      }
 
-  let handleprint =(event)=>{
+  const handlePrint =(event)=>{
     
-   setSubmitval(event.target.value) 
+   setSubmitval(true) 
 
   }
   
@@ -28,17 +28,17 @@ const Variables = () => {
     <h1> WELCOME TO THE REACTJS</h1>
     <div>
       <label htmlFor="a">Enter A value :</label>
-       <input type="text" id='a'  value ={input.a} onChange={handlechange}/>
+       <input type="text" id='inputOne'  value ={inputOne} onChange={handleChangeOne}/>
     </div>
     <div>
       <label htmlFor="b">Enter B value :</label>
-      <input type="text" id='b' value ={input.b} onChange ={handlechange} />
+       <input type="text" id='inputTwo' value ={inputTwo} onChange ={handleChangeTwo} /> 
     </div>
     <div>
-      <button  onClick={handleprint}>print</button>
+      <button  onClick={handlePrint}>print</button>
     </div>
 
-    {setSubmitval && <p>A value is :{submitval.a} and B : value is {submitval.b}</p>}
+    {submitval && (<p>A value is :{inputOne} and B  value is :{inputTwo}</p>)}
     </>
   )
 }
