@@ -2,19 +2,19 @@ import React,{useState} from 'react'
 
 const Variables = () => {
 
-const [inputOne,setInputOne] = useState();
-const[inputTwo, setInputTwo] = useState();
+const [input,setInput] = useState({
+  a:"",
+  b:"",
+});
+ 
+const {a,b} = input;
 
    const [submitval,setSubmitval] = useState(false);
 
   const handleChangeOne = (event) => {
-    const value=event.target;
-    setInputOne(value);
-   
+    setInput({...input, [event.target.name]:[event.target.value]});
       }
-      const handleChangeTwo = (event) => {
-        setInputTwo(event.target.value);
-      }
+      
 
   const handlePrint = (event) => {
        setSubmitval(true) 
@@ -25,16 +25,16 @@ const[inputTwo, setInputTwo] = useState();
     <h1> WELCOME TO THE REACTJS</h1>
     <div>
       <label htmlFor="a">Enter A value :</label>
-       <input type="text" id='inputOne'  value ={inputOne} onChange={handleChangeOne}/>
+       <input type="text" name='a'  value ={input.a} onChange={handleChangeOne}/>
     </div>
     <div>
       <label htmlFor="b">Enter B value :</label>
-       <input type="text" id='inputTwo' value ={inputTwo} onChange ={handleChangeTwo} /> 
+       <input type="text" name='b' value ={input.b} onChange ={handleChangeOne} /> 
     </div>
     <div>
       <button  onClick={handlePrint}>print</button>
     </div>
-    {submitval && (<p>A value is :{inputOne} and B  value is :{inputTwo}</p>)}
+    {submitval && (<p>A value is :{input.a} and B  value is :{input.b}</p>)}
     </>
   )
 }
