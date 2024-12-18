@@ -1,45 +1,44 @@
-import React, { useState } from 'react'
+import React,{useState} from 'react'
 
 const Variables = () => {
 
-  let [value,setValue] = useState({})
+  let [input,setInput] = useState({
+     a:"",
+     b:"",
+  })
 
+   let [submitval,setSubmitval] = useState(false)
 
+  let handlechange =(event)=>{
+        
+        setInput(event.target.value)
+        
+         
+    }
 
-  let [submittedvalues,setSubmittedvalues] = useState({})
-
-
-  let handlechange = (event) =>
-  {
-
-    const { name, value } = event.target;
-    setValue({ ...value, [name]: value });
-    //setValue(event.target.value)
-  }
-
-  let handlesubmit = (event)=>{
-    console.log(event);
-    setSubmittedvalues(value)
-  }
+  let handleprint =(event)=>{
     
-    <h3> {value} </h3>
+   setSubmitval(event.target.value) 
+
+  }
   
-   return (
+  return (
     <>
-    <h1> Welcome to the react js</h1>
+
+    <h1> WELCOME TO THE REACTJS</h1>
     <div>
-        <label htmlFor="">Enter a value</label>
-        <input type="text"  onChange ={handlechange}/>
+      <label htmlFor="a">Enter A value :</label>
+       <input type="text" id='a'  value ={input.a} onChange={handlechange}/>
     </div>
     <div>
-        <label htmlFor="">Enter b value : </label>
-        <input type="text"  onChange ={handlechange}/>
+      <label htmlFor="b">Enter B value :</label>
+      <input type="text" id='b' value ={input.b} onChange ={handlechange} />
     </div>
     <div>
-        <button onClick ={handlesubmit}>print</button>
+      <button  onClick={handleprint}>print</button>
     </div>
 
-
+    {setSubmitval && <p>A value is :{submitval.a} and B : value is {submitval.b}</p>}
     </>
   )
 }
