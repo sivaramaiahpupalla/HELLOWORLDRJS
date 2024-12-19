@@ -3,66 +3,51 @@ import React,{useState} from 'react'
 const Variables = () => {
 
 const [input,setInput] = useState({
-  a:"",
-  b:"",
+  a:'',
+  b: '',
 });
  
  const {a,b} = input;
 
  const [submitval,setSubmitval] = useState(false);
- const [inputone,setInputone] = useState(false);
- const [inputtwo,setInputTwo] = useState(false);
- const [inputthree,setInputThree] = useState(false);
- const [inputfour,setInputFour] = useState(false);
+ const [val,setVal] = useState('')
+ const [msg,setMsg] = useState('')
+ const [ cal, setCal] = useState()
 
  const handleChangeOne = (event) => {
    setInput({...input, [event.target.name]:[event.target.value]});
  }
-      
-
-  const handlePrint = (event) => {
+   const handlePrint = (event) => {
        setSubmitval(true); 
    }
-   const handleAdd = (event) => {
-    const num1 = parseFloat(a);
-    const num2 = parseFloat(b);
-    const r1 = num1+num2;
-      setInputone(r1) 
-    }
+   const handleAdd = () => {
     
-  
-
-   const handleSub = (event) => {
-    const num1 = parseFloat(a);
-    const num2 = parseFloat(b);
-    const r2 = num1-num2;
-      if(num2>num1)
+    setCal(parseFloat(a)+ parseFloat(b));
+    setVal('ADD')
+       }
+    const handleSub = (event) => {
+      setVal('SUB');
+      if(parseFloat(b)<parseFloat(a))
       {
-        setInputTwo(r2);
+              setCal(parseFloat(a)-parseFloat(b));
       }
       else {
-        console.log("Wrong inputs");
-        
+              setMsg("Wrong inputs");
       }
        
    }
-
-    const handleMul = (event) => {
-      const num1 = parseFloat(a);
-      const num2 = parseFloat(b);
-      const r3 = num1*num2;
-        setInputThree(r3)  
+      const handleMul = (event) => {
+        setVal('MUL')  
+        setCal(parseFloat(a)*parseFloat(b))
     }
     const handleDiv = (event) => {
-      const num1 = parseFloat(a);
-      const num2 = parseFloat(b);
-      const r4 = num1/num2;
-        setInputFour(r4) 
+        setVal('DIV') 
+        setCal(parseFloat(a)/parseFloat(b))
      
     }
   
   return (
-    <>
+  <>
     <h1> WELCOME TO THE REACTJS</h1>
     <div>
       <label htmlFor="a">Enter A value :</label>
@@ -80,11 +65,11 @@ const [input,setInput] = useState({
       <button  onClick={handleDiv}>DIV</button>
     </div>
     {submitval && (<p>A value is :{input.a} and B  value is :{input.b}</p>)}
-    {inputone && (<p>result:{input.a}+{input.b}={handleAdd}</p>)}
-    {inputtwo && (<p>result:{input.a}-{input.b}</p>)}
-    {inputthree && (<p>result:{input.a}*{input.b}</p>)}
-    {inputthree && (<p>result:{input.a}/{input.b}</p>)}
-    </>
+    {val === 'ADD' && <p>Result for Addition= {cal}</p> }
+    {val === 'SUB' && msg ? msg : <p>Result for Subtraction= {cal}</p> }
+    {val === 'MUL' && <p>Result for Multiplication= {cal}</p> }
+    {val === 'DIV' && <p>Result for Division= {cal}</p> }
+  </>
   )
 }
 
