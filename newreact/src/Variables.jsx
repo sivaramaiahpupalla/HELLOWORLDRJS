@@ -36,7 +36,7 @@ const [input,setInput] = useState({
       }
       else {
         setVal('')
-              setMsg("Wrong inputs");
+              setMsg("subtraction not possible");
       }
       
    }
