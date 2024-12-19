@@ -19,31 +19,36 @@ const [input,setInput] = useState({
  }
    const handlePrint = (event) => {
        setSubmitval(true); 
+       setMsg('')
    }
    const handleAdd = () => {
-    
-    setCal(parseFloat(a)+ parseFloat(b));
     setVal('ADD')
+        setCal(parseFloat(a)+ parseFloat(b));
+        setMsg('')
+   
        }
-    const handleSub = (event) => {
-      setVal('SUB');
+    const handleSub = () => {
+      
       if(parseFloat(b)<parseFloat(a))
       {
+        setVal('SUB');
               setCal(parseFloat(a)-parseFloat(b));
       }
       else {
+        setVal('')
               setMsg("Wrong inputs");
       }
-       
+      
    }
-      const handleMul = (event) => {
+      const handleMul = () => {
         setVal('MUL')  
         setCal(parseFloat(a)*parseFloat(b))
+        setMsg('')
     }
-    const handleDiv = (event) => {
+    const handleDiv = () => {
         setVal('DIV') 
         setCal(parseFloat(a)/parseFloat(b))
-     
+        setMsg('')
     }
   
   return (
@@ -66,9 +71,10 @@ const [input,setInput] = useState({
     </div>
     {submitval && (<p>A value is :{input.a} and B  value is :{input.b}</p>)}
     {val === 'ADD' && <p>Result for Addition= {cal}</p> }
-    {val === 'SUB' && msg ? msg : <p>Result for Subtraction= {cal}</p> }
+    {val === 'SUB' && <p>Result for Subtraction= {cal}</p> }
     {val === 'MUL' && <p>Result for Multiplication= {cal}</p> }
     {val === 'DIV' && <p>Result for Division= {cal}</p> }
+    {msg}
   </>
   )
 }
