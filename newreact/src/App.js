@@ -1,39 +1,16 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           add<code>src/App.js</code> and .
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React from 'react'
-import Variables from './Variables'
+import Profile from './Profile';
+import Crud from './Crud';
 
 const App = () => {
   return (
     <>
-    <Variables />
+    {/* <Variables /> */}
+    {/* <Profile /> */}
+    <Crud />
     </>
   )
 }
 
-export default App
+export default App;
+

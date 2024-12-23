@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "id": "24ba",
+      "FirstName": "Sivaramaiah",
+      "LastName": "pupalla",
+      "DOB": "222",
+      "Qualification": "bbb",
+      "PassedoutYear": "1008",
+      "Percentage": "89"
+    }
+  ]
+}
