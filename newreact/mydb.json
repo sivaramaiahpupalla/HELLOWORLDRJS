@@ -1,13 +1,22 @@
 {
   "users": [
     {
-      "id": "24ba",
+      "id": "4a66",
+      "FirstName": "aaa",
+      "LastName": "bbbb",
+      "DOB": "15-5-2000",
+      "Qualification": "B.Tech",
+      "PassedoutYear": "2023",
+      "Percentage": "5566"
+    },
+    {
+      "id": "a548",
       "FirstName": "Sivaramaiah",
       "LastName": "pupalla",
-      "DOB": "222",
-      "Qualification": "bbb",
-      "PassedoutYear": "1008",
-      "Percentage": "89"
+      "DOB": "15-5-2000",
+      "Qualification": "B.Tech",
+      "PassedoutYear": "2023",
+      "Percentage": "88"
     }
   ]
 }
