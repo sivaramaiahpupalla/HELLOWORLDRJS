@@ -120,13 +120,37 @@
   }
   
   .popupcontentstyle {
-    background-color: white;
+    background-color: rgb(39, 6, 223);
     padding: 20px;
     border-radius: 8px;
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  .head{
+    border: 2px solid black;
+    padding: 8px;
+
+  }
+  .bodydata{
+    border: 2px solid black;
+    padding: 8px;
+  }
+  .tablestyle{
+    border: '2px solid black';
+    border-collapse: 'collapse';
+    width: '100%';
+    text-align: 'left'
+  }
+  .crosssymbol{
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: red;
+  }
+
   
 
   

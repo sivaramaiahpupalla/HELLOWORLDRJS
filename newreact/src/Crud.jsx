@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Crud.css';
+import { RxCross2 } from "react-icons/rx";
 const Crud = () => {
   const [stu, setStu] = useState({
     FirstName: '',
@@ -86,7 +87,7 @@ const Crud = () => {
   
   const handleEdit = async (id) => {
     const rowToEdit = data.find((item) => item.id === id);
-   // setStu(rowToEdit);
+    setStu(rowToEdit);
     setEditId(id);
     setIsPopupOpen(true);
   };
@@ -111,7 +112,8 @@ const Crud = () => {
 
   return (
     <>
-      <form className='form' onSubmit={handleSubmit}>
+       <form className='form' onSubmit={handleSubmit}>
+       <h2> -:Student Details form:-</h2>
         <div className='FirstNameField'>
           <label htmlFor="FirstName">FirstName :</label>
           <input type="text" value={FirstName} name="FirstName" onChange={handleChange} />
@@ -141,28 +143,28 @@ const Crud = () => {
         </div>
       </form>
 
-      <table style={{ border: '2px solid black', borderCollapse: 'collapse', width: '100%', textAlign: 'left' }}>
+      <table className='tablestyle'>
         <thead>
           <tr>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>FirstName</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>LastName</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>DOB</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>Qualification</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>PassedoutYear</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>Percentage</th>
-            <th style={{ border: '1px solid black', padding: '8px', backgroundColor: '#f2f2f2' }}>Action</th>
+            <th className='head'>FirstName</th>
+            <th className='head'>LastName</th>
+            <th className='head'>DOB</th>
+            <th className='head'>Qualification</th>
+            <th className='head'>PassedoutYear</th>
+            <th className='head'>Percentage</th>
+            <th className='head'>Action</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
-            <tr key={index}>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.FirstName}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.LastName}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.DOB}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.Qualification}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.PassedoutYear}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{item.Percentage}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>
+            <tr key={index} >
+              <td className='bodydata'>{item.FirstName}</td>
+              <td className='bodydata'>{item.LastName}</td>
+              <td className='bodydata'>{item.DOB}</td>
+              <td className='bodydata'>{item.Qualification}</td>
+              <td className='bodydata'>{item.PassedoutYear}</td>
+              <td className='bodydata'>{item.Percentage}</td>
+              <td className='bodydata'>
                 <button onClick={() => handleEdit(item.id)} >edit</button>
                 <span> </span>
                 <button onClick={() => handleDelete(item.id)}>delete</button>
@@ -180,7 +182,11 @@ const Crud = () => {
            
             onClick={(e) => e.stopPropagation()}
           >
+            <div>
+
             <h2>Edit Student Details</h2>
+            <button onClick={handleClosePopup} className='crosssymbol'><RxCross2 /></button>
+            </div>
             <form onSubmit={handleUpdate}>
               <div>
                 <label>FirstName:</label>
@@ -239,8 +245,10 @@ const Crud = () => {
               <button type="submit">Update</button>
             </form>
             <button onClick={handleClosePopup}>Cancel</button>
+            
           </div>
         </div>
+        
       )}
     </>
   );

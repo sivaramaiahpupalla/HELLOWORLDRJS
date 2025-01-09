@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "FirstName": "vxgy q",
-      "LastName": "hvx",
-      "DOB": "xg",
-      "Qualification": "hvx",
-      "PassedoutYear": "hv",
-      "Percentage": "hbs",
-      "id": "4a66"
-    },
-    {
       "FirstName": "ashok",
       "LastName": "pupalla",
       "DOB": "1998",
@@ -25,7 +16,7 @@
       "DOB": "15-5-2000",
       "Qualification": "B.Tech",
       "PassedoutYear": "2023",
-      "Percentage": "88"
+      "Percentage": "90"
     },
     {
       "id": "394a",
@@ -35,15 +26,6 @@
       "Qualification": "",
       "PassedoutYear": "",
       "Percentage": ""
-    },
-    {
-      "id": "8700",
-      "FirstName": "Sivaramaiah",
-      "LastName": "pupalla",
-      "DOB": "15-5-2000",
-      "Qualification": "B.Tech",
-      "PassedoutYear": "2023",
-      "Percentage": "88"
     },
     {
       "id": "9025",
