@@ -105,10 +105,7 @@ const Crud = () => {
       });
        setEditId(null);
   };
-  const handlePopupOpen = () => {
-     setIsPopupOpen(true);
-  };
-
+  
 
   return (
     <>

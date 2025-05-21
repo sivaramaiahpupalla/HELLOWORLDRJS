@@ -15,4 +15,25 @@ git pull origin main -->When we do any changes than we use this cmd
 
 https://jsonplaceholder.typicode.com/todos
 
-npx json-server --watch db.json --port=5000
+npx json-server --watch mydb.json --port=5000
+
+
+
+
+9177907013 uma
+9052917562 meseva gopi 
+
+9618663096 muggu
+
+
+
+
+react redux
+react redux toolkit
+
+pixabay :- sample videos uploading in react 
+
+
+S01542976
+
+

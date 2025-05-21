@@ -60,13 +60,22 @@
   }
    */
    .form {
-    max-width: 600px;
-    margin: 126px auto;
-    padding: 70px;
-    border: 6px solid #673AB7;
-    border-radius: 40px;
-    background-color: #673AB7;
+    max-width: 692px;
+    margin: 136px auto;
+    padding: 46px;
+    border: 26px solid #673AB7;
+    border-radius: 46px;
+    background-color: #3ab79a;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .sample {
+    padding: 15px;
+    text-decoration: underline;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 120px;
+
   }
 
   .FirstNameField {
@@ -79,12 +88,12 @@
   }
   .DOBField {
     margin-bottom: 16px;
-    margin-left: 37px;
+    margin-left: 0px;
 
   }
   .QualificationField {
     margin-bottom: 15px;
-    margin-left: -19px
+    margin-left: 1px;
 
   }
   .PassedoutYearField {
@@ -151,6 +160,52 @@
     color: red;
   }
 
-  
+  .idcard-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
 
-  
+  .idcard {
+    width: 350px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    color: #333;
+    border: 2px solid #ccc;
+    transition: all 0.3s;
+  }
+
+  .idcard-title {
+    margin-bottom: 16px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .idcard.software-engineer {
+    border: 2px solid #007bff;
+    background: #e3f0ff;
+    color: #003366;
+  }
+
+  .idcard.data-scientist {
+    border: 2px solid #28a745;
+    background: #eaffea;
+    color: #155724;
+  }
+
+  .idcard.product-manager {
+    border: 2px solid #ffc107;
+    background: #fffbe6;
+    color: #856404;
+  }
+
+  .idcard.hr {
+    border: 2px solid #dc3545;
+    background: #ffeaea;
+    color: #721c24;
+  }
+
+
+

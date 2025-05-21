@@ -1,40 +1,31 @@
 {
   "users": [
     {
-      "FirstName": "ashok",
-      "LastName": "pupalla",
-      "DOB": "1998",
-      "Qualification": "b.tech",
-      "PassedoutYear": "2019",
-      "Percentage": "72",
-      "id": "ad11"
+      "id": "3e6b",
+      "FirstName": "hv",
+      "LastName": "biu",
+      "DOB": "bbhj",
+      "Qualification": "bjh",
+      "PassedoutYear": "bjkm",
+      "Percentage": "bkj"
     },
     {
-      "id": "2540",
-      "FirstName": "Sivaramaiah",
-      "LastName": "pupalla",
-      "DOB": "15-5-2000",
-      "Qualification": "B.Tech",
-      "PassedoutYear": "2023",
-      "Percentage": "90"
+      "id": "1b61",
+      "FirstName": "ooooo",
+      "LastName": "oooo",
+      "DOB": "ooooo",
+      "Qualification": "ooooo",
+      "PassedoutYear": "oooo",
+      "Percentage": "ooo"
     },
     {
-      "id": "394a",
-      "FirstName": "Sivaramaiah",
-      "LastName": "pupalla",
-      "DOB": "2022",
-      "Qualification": "",
-      "PassedoutYear": "",
-      "Percentage": ""
-    },
-    {
-      "id": "9025",
-      "FirstName": "pupalla",
-      "LastName": "Siva Ramaiah",
-      "DOB": "2001",
-      "Qualification": "B.Tech",
-      "PassedoutYear": "2023",
-      "Percentage": "86"
+      "id": "8851",
+      "FirstName": "ppp",
+      "LastName": "pppp",
+      "DOB": "pppp",
+      "Qualification": "pppp",
+      "PassedoutYear": "pppp",
+      "Percentage": "pppp"
     }
   ]
 }
