@@ -1,0 +1,107 @@
+.form {
+    max-width: 375px;
+    margin: 13px auto;
+    padding: 3px;
+    border: 4px solid #673AB7;
+    border-radius: 38px;
+    background-color: #3ab79a;
+  }
+  .sample {
+   text-decoration: underline;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 18px;
+    text-align: center;
+    font-style: oblique;
+
+  }
+
+  .FirstNameField {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+  }
+  .LastNameField {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+  }
+  .DOBField {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+  }
+  .QualificationField {
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    }
+    .SubmitButton {
+        text-align: center;
+    margin-left: 75px;
+    margin-top: 27px;
+
+    }
+    .EmployeeNameinput {
+       text-align: center;
+    margin-left: 25px;
+    }
+    .EmployeeAgeinput {
+        text-align: center;
+    margin-left: 42px;
+    }
+    .EmployeeSalaryinput {
+         text-align: center;
+    margin-left: 29px;
+    }
+ 
+
+.card {
+  max-width: 375px;
+    margin: 68px auto;
+    margin-top: 123px;
+    margin-left: 20px;
+    border: 4px solid #82b73a;
+    border-radius: 13px;
+    font-style: italic;
+}
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+    text-decoration: underline;
+}
+
+
+.card.software-engineer {
+  background-color: crimson;
+}
+
+.card.data-scientist {
+  background-color: navy;
+}
+
+.card.product-manager {
+  background-color: #80b42b;
+  color: #333; 
+}
+
+.card.designation-hr {
+  background-color: #E83E8C; 
+}
+
+.designation-default {
+  background-color: #726c7d54; 
+}
