@@ -68,10 +68,7 @@ const SampleForm = () => {
   return (
     <>
       <form className='form' onSubmit={handleSubmit}>
-
-
-        <h1>Accenture</h1>
-       < input type="file" placeholder="Search..."    />
+        
         <div className='sample'>
             <h2>Employee Details form</h2>
 

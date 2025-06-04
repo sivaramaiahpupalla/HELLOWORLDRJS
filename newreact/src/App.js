@@ -174,15 +174,56 @@
 // }
 
 // export default App
+// ******************Employee Details Form*************
 
+// import React from 'react'
+// import SampleFrom from './SampleFrom'
+
+// const App = () => {
+//   return (
+//     <>
+//     <SampleFrom />
+//     </>
+//   )
+// }
+
+// export default App
+
+// ******************Employee Id********************
+
+// import React from 'react'
+// import EmployeeId from './EmployeeId'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <EmployeeId />
+//     </div>
+//   )
+// }
+
+// export default App
+// import React from 'react'
+// import EmployeesDetailsJson from './EmployeesDetailsJson'
+
+// const App = () => {
+//   return (
+    
+//     <>
+//     <EmployeesDetailsJson />
+//     </>
+//   )
+// }
+
+// export default App
 
 import React from 'react'
-import SampleFrom from './SampleFrom'
+import Apipostsrender from './Apipostsrender'
 
 const App = () => {
   return (
     <>
-    <SampleFrom />
+    <Apipostsrender />
     </>
   )
 }

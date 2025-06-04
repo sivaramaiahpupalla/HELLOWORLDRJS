@@ -1,0 +1,98 @@
+.form {
+    max-width: 375px;
+    margin: 13px auto;
+    padding: 3px;
+    border: 4px solid #673AB7;
+    border-radius: 38px;
+    background-color: #3ab79a;
+  }
+  .head{
+   text-decoration: underline;
+    font-size: 29px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 23px;
+    text-align: center;
+    font-style: oblique;
+    margin-top: auto;
+
+  }
+  .sample {
+    font-size: 10px;
+    margin-left:15px;
+    font-style: oblique;
+
+  }
+  .fileinputfield {
+    margin-left: 58px;
+    text-align: center;
+  }
+  .EmployeeIdinputfield {
+     margin-top: 5px;
+    margin-left: 55px;
+    text-align: center;
+  }
+  .EmployeeNameinputfield {
+    margin-top: 5px;
+    margin-left: 38px;
+    text-align: center;
+
+  }
+  .EmployeeBloodGroupinputfield {
+    margin-top: 5px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  .Designationinputfield {
+     margin-top: 5px;
+    margin-left: 57px;
+    text-align: center;
+  }
+  .submit {
+     margin-top: 5px;
+     margin-left: 15px;
+    text-align: center;
+  }
+  .card {
+  max-width: 375px;
+    margin: 68px auto;
+    margin-top: 123px;
+    margin-left: 20px;
+    border: 4px solid #82b73a;
+    border-radius: 13px;
+    font-style: italic;
+}
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  
+  text-align: center;
+  text-decoration: underline;
+  background-color: #3ab76a75;
+}
+.card.software-engineer {
+  background-color: crimson;
+
+}
+.card.project-manager {
+  background-color: #673AB7;
+}
+.card.hr-manager {
+  background-color: #FF9800;
+}
+.card.data-analyst {
+  background-color: #FF5722;
+}
+.card.uiux-designer {
+  background-color: #4CAF50;
+}
+
+ .image {
+ 
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}

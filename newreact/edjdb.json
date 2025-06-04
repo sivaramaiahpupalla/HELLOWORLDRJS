@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "EmployeeId": 456,
+      "EmployeeName": "John Doe",
+      "EmployeeBloodGroup": "O+",
+      "Designation": "Software Engineer"
+    },
+    {
+      "id": "1502",
+      "EmployeeId": "hjkb",
+      "EmployeeName": "hjnbiu",
+      "EmployeeBloodGroup": "hjv ",
+      "Designation": "hvnu "
+    },
+    {
+      "id": "d522",
+      "EmployeeId": "jhu",
+      "EmployeeName": "kjgbkiu",
+      "EmployeeBloodGroup": "yyy",
+      "Designation": "hhh"
+    }
+  ]
+}
