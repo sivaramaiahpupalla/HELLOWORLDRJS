@@ -216,16 +216,49 @@
 // }
 
 // export default App
+//*********************Fetching posts from Api***************************** */
 
-import React from 'react'
-import Apipostsrender from './Apipostsrender'
+// import React from 'react'
+// import Apipostsrender from './Apipostsrender'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Apipostsrender />
+//     </>
+//   )
+// }
+
+// export default App
+// ******************Student Dashboard**********************
+// import React from 'react'
+// import StudentDashboard from './StudentDashboard'
+
+// const App = () => {
+//   return (
+//     <>
+//     <StudentDashboard />
+//     </>
+//   )
+// }
+
+// export default App
+
+// *******************Counter App***********************
+import React from 'react';
+import ReactCounter from './ReactCounter';
+
 
 const App = () => {
   return (
     <>
-    <Apipostsrender />
+    <ReactCounter />
+      <h1>Counter App</h1>
+      <p>This is a simple counter application.</p>
+      {/* Add your counter component here */}
     </>
-  )
+  );
 }
+export default App;
 
-export default App
+

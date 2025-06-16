@@ -96,7 +96,8 @@ return (
         </thead>
         <tbody>
             {posts
-                .filter(post => post.title.toLowerCase().includes(searchTerm.toLowerCase()))
+                //.filter(post => post.title.toLowerCase().includes(searchTerm.toLowerCase()))
+                .filter(post => post.body.toLowerCase().includes(searchTerm.toLowerCase()))
                 .slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage)
                 .map(post => (
                     <tr key={post.id}>
