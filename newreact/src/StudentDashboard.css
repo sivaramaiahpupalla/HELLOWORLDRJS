@@ -1,0 +1,78 @@
+/* StudentDashboard.css */
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+form h2 {
+  text-align: center;
+  color: #333;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+form div {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-style: oblique;
+  font-size: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+ 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+thead {
+  background-color: #eee;
+  font-weight: bold;
+  
+}
+
+h3 {
+  text-align: center;
+  margin-top: 30px;
+  color: #444;
+}

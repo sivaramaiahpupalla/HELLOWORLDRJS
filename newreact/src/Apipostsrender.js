@@ -91,7 +91,7 @@ return (
                 <th onClick={() => handleSort('userId')}>userId</th>
                 <th onClick={() => handleSort('id')}>id</th>
                 <th onClick={() => handleSort('title')}>title</th>
-                <th onClick={() => handleSort('body')}>body</th>
+                <th onClick={() => HandleEdit('body')}>body</th>
             </tr>
         </thead>
         <tbody>

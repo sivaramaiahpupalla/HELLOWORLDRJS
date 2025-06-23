@@ -1,24 +1,37 @@
 {
   "users": [
     {
-      "EmployeeId": 456,
-      "EmployeeName": "John Doe",
-      "EmployeeBloodGroup": "O+",
-      "Designation": "Software Engineer"
+      "id": "db5a",
+      "name": "Sivaramaiah pupalla",
+      "age": 0,
+      "email": "sivaramaiahpuppalla@gmail.com",
+      "phone": "07674843429",
+      "address": "3er3r3r",
+      "city": "Guntur",
+      "state": "Andhra Pradesh",
+      "country": "India"
     },
     {
-      "id": "1502",
-      "EmployeeId": "hjkb",
-      "EmployeeName": "hjnbiu",
-      "EmployeeBloodGroup": "hjv ",
-      "Designation": "hvnu "
+      "id": "e353",
+      "name": "Sivaramaiah",
+      "age": 24,
+      "email": "sivaramaiahp@gmail.com",
+      "phone": "8247749339",
+      "address": "Vangipuram",
+      "city": "Guntur",
+      "state": "Andhra Pradesh",
+      "country": "India"
     },
     {
-      "id": "d522",
-      "EmployeeId": "jhu",
-      "EmployeeName": "kjgbkiu",
-      "EmployeeBloodGroup": "yyy",
-      "Designation": "hhh"
+      "id": "77f8",
+      "name": "Sivaramaiah pupalla",
+      "age": "25",
+      "email": "sivaramaiahpuppalla@gmail.com",
+      "phone": "07674843429",
+      "address": "Ponnur",
+      "city": "Guntur",
+      "state": "Andhra Pradesh",
+      "country": "India"
     }
   ]
 }

@@ -245,20 +245,109 @@
 // export default App
 
 // *******************Counter App***********************
-import React from 'react';
-import ReactCounter from './ReactCounter';
+// import React from 'react';
+// import ReactCounter from './ReactCounter';
 
+
+// const App = () => {
+//   return (
+//     <>
+//     <ReactCounter />
+//       <h1>Counter App</h1>
+//       <p>This is a simple counter application.</p>
+//       {/* Add your counter component here */}
+//     </>
+//   );
+// }
+// export default App;
+
+// ******************UseCallback Hook**********************
+
+// import React from 'react'
+// import Usecallback from './Usecallback'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Usecallback />
+//     </>
+//   )
+// }
+
+// export default App
+
+//****************Application******************************
+
+// import React from 'react';
+// import Application from './Application';
+// const App =() => {
+//   return (
+//     <>
+//       <Application />
+//     </>
+//   );  
+
+// }
+// export default App;
+
+// ******************Array Sum**********************
+// import React from 'react';
+// import ArraySum from './ArraySum';
+// const App = () => {
+//   return (
+//     <>
+//       <ArraySum />
+//     </>
+//   );
+// }
+// export default App;
+// ******************Nested Array Sum**********************
+// import React from 'react';
+// import NestedArraySum from './NestedArraySum';
+// const App = () => {
+//   return (
+//     <>
+//       <NestedArraySum />
+//     </>
+//   );
+// }
+// export default App;
+// ******************String to Number Conversion**********************
+// import React from 'react';
+// import StringintoNum from './StringintoNum';
+
+// const App = () => {
+//   return(
+//     <>
+//     <StringintoNum />
+//     </>
+//   )
+// }
+// export default App;
+// ******************Fibonacci Series**********************
+// import React from 'react';
+// import Fibbonaci from './Recursivefunc.jsx/Fibbonaci';
+// const App = () => {
+//   return (
+//     <div>
+      
+//       <h1>Fibonacci Series</h1>
+//       <p>This is Recursion Function</p>
+//       <Fibbonaci />
+//     </div>
+//   );
+// }
+// export default App;
+// ******************Factorial**********************
+import React from 'react';
+import Factorial from './Recursivefunc.jsx/Factorial';
 
 const App = () => {
   return (
-    <>
-    <ReactCounter />
-      <h1>Counter App</h1>
-      <p>This is a simple counter application.</p>
-      {/* Add your counter component here */}
-    </>
-  );
+    <div>
+      <Factorial />
+      <h1>Factorial Calculation</h1>
+    </div>
+  )
 }
 export default App;
-
-
